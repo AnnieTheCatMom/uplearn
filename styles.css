@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.header {
+  object-fit: contain;
+  background-color: white;
+  width: 97%;
+  height: 90px;
+  margin: auto;
+}
+
+.header_content {
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.header_logo {
+  display: flex;
+  object-fit: contain;
+  width: 20%;
+  height: 100%;
+}
+
+.buttons {
+  padding-right: 10%;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactlogin {
+  padding-right: 5%;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.contactlogin_buttons {
+  padding: 5px 15px 5px;
+  color: white;
+  background-color: rgb(24, 186, 178);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+}
+
+.contactlogin_buttons:hover {
+  transform: scale(0.9);
+  background-color: rgb(23, 169, 158);
+}
+
+.main-buttons {
+  padding: 5px 15px 5px;
+  color: white;
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
