@@ -28,7 +28,7 @@ body {
 
 .buttons {
   padding-right: 10%;
-  width: 50%;
+  width: 55%;
   height: 100%;
   text-align: center;
   display: flex;
@@ -61,8 +61,12 @@ body {
 
 .contactlogin_buttons:hover {
   transform: scale(0.95);
-  color: white;
-  background-color: rgb(67, 124, 184);
+  color: rgb(34, 106, 182);
+  background-color: white;
+  border-color: rgb(34, 106, 182);
+  border-width: 3px;
+  border-style: solid;
+  font-weight: 700;
 }
 
 .main-buttons {
@@ -80,50 +84,88 @@ body {
 
 .main-buttons:hover {
   transform: scale(0.95);
-  color: rgb(34, 106, 182);
-  background-color: white;
-  border-color: rgb(34, 106, 182);
-  border-width: 2px;
-  border-style: solid;
+  color: white;
+  background-color: rgb(67, 124, 184);
 }
 
 a {
   text-decoration: none;
 }
 
+.content {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
 .content-text-place {
+  display: inline-block;
   width: 50%;
   height: auto;
   margin-top: 10%;
   margin-left: 3%;
 }
 
-.dropdown {
-  margin-right: 100px;
-  margin-top: 25px;
+.carousel_size {
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
-.dropdown-coloring {
+.dropbtn {
   background-image: linear-gradient(
     180deg,
-    rgb(92, 170, 253),
+    rgb(34, 106, 182),
     rgba(159, 3, 250, 0.681)
   );
-  border-radius: 5px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
   border: none;
+  transform: scale(0.95);
+  -color: white;
+
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 5px;
+  padding: 5px 15px 6px 15px;
+  width: 125%;
+  height: 36px;
 }
 
-.dropdown-coloring:hover {
-  background-color: white;
-  color: rgba(34, 0, 188, 0.681);
-  border-color: linear-gradient(
-    180deg,
-    rgb(131, 191, 255),
-    rgba(34, 0, 188, 0.681)
-  );
-  border-width: 2px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+.dropdown:hover {
+  transform: scale(0.95);
+  object-fit: contain;
+}
 .cards {
   margin-top: 200px;
   margin-left: 5%;
@@ -151,6 +193,8 @@ a {
 
 .card-body {
   margin-top: 20px;
+  text-align: left;
+  padding-right: 30px;
 }
 
 .card-text {

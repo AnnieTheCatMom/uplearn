@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UpLearn</title>
     <link href="styles.css" rel="stylesheet" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
-    />
+    /> -->
+    <link href="bootstrap.css" rel="stylesheet"/>
   </head>
 
   <body style="background-color: white;">
@@ -23,63 +24,19 @@
             src="images/logo-uplearn-transparent.png"
           />
         </div>
-        <div class="dropdown">
-          <button 
-            class="btn btn-secondary dropdown-toggle dropdown-coloring"
-            type="button"
-            data-bs-toggle="dropdown"
        
-          >
-            Courses
-          </button>
-          <ul
-            class="dropdown-menu"
-            style="background-color: white; "
-          >
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >English</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >Español</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >Française</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >Deutsch</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >Русский</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >Українська</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >日本</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" style="font-weight: 600" href="#"
-                >한국어</a
-              >
-
-          </ul>
-        </div>
         <div class="buttons">
-          <a href="onlinetest.html" class="main-buttons">Online tests</a>
+        <div class="dropdown">
+          <button class="dropbtn">Courses</button>
+          <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">Spanish</a>
+            <a href="#">German</a>
+            <a href="#">French</a>
+          </div>
+        </div>
+
+        <a href="onlinetest.html" class="main-buttons">Online tests</a>
 
           <a href="ourteachers.html" class="main-buttons">Our teachers</a>
 
@@ -93,6 +50,7 @@
       </div>
     </div>
 
+  
     <div class="content">
       <div class="content-text-place">
         <p
@@ -127,16 +85,19 @@
           repetition.
         </p>
       </div>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div id="carouselExampleInterval" class="carousel slide carousel_size" data-bs-ride="carousel" style="width: 35%; ">
+          <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="login.html" class="d-block w-100" alt="...">
+            <img src="images/certificates.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="lookthere.jpg" class="d-block w-100" alt="...">
+            <img src="images/auditorium.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="images/party.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/zoom.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -149,7 +110,9 @@
         </button>
       </div>
     </div>
+ 
 
+  
    <div style="width: 100%;">
     <div class="cards">
       <div class="card1">
@@ -158,7 +121,7 @@
       </div>
         <div class="card-body">
           <h5 class="card-title">Find out your English level!</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Our certified online test will help you to determine your English level.</p>
           <a href="#" class="btn btn-primary">Get started</a>
         </div>
       </div>
@@ -171,7 +134,7 @@
       </div>
         <div class="card-body">
           <h5 class="card-title">Join our student groups!</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">We have over 50 student groups about to start their language course right now.</p>
           <a href="#"  class="btn btn-primary">Get started</a>
         </div>
       </div>
@@ -184,12 +147,12 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Become a teacher yourself!</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">There is at least one language you speak fluently. Share it with the world!</p>
           <a href="#" class="btn btn-primary">Get started</a>
         </div>
       </div>
     </div>
-  </div>
+  
 
 
 
